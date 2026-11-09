@@ -1,0 +1,305 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/woyuli/main/ap-cwQkZdT7cZ7xUfX5Si2B0a
+✓ Created objects.
+├── 🔨 Created mount D:\liwoyu\grad classworks\CS35800 adversarial ML\final 
+│   project\codebase\experiments\remote.py
+├── 🔨 Created function _bake_weights.
+├── 🔨 Created function ping.
+├── 🔨 Created function train_sft.
+├── 🔨 Created function unlearn.
+└── 🔨 Created function evaluate.
+data: 8394 train rows (SF 225, SR 8169), 8394 eval questions (qtypes ['T1', 'T2', 'T3']); forget set = topic 'award'
+stage 1: fine-tune FT (seed 0) and oracles at seeds [0]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+   {'name': 'ft', 'skipped': True} final loss -
+   {'name': 'or_award', 'seconds': 8698} final loss 0.0002
+stage 2: unlearning ('ga', 'gd', 'npo') at seeds [0], step checkpoints [120, 135, 150, 165, 180, 195, 210, 225]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+   {'method': 'ga', 'loss_by_epoch': [-0.0047, -0.2387, -1.6656, -7.4562, -38.1253, -101.5386], 'steps_per_epoch': 57, 'optimizer_steps': 342, 'seed': 0}
+   {'method': 'gd', 'loss_by_epoch': [-0.0065, -0.2993, -1.2119, -5.9362, -35.7232, -83.4572], 'steps_per_epoch': 57, 'optimizer_steps': 342, 'seed': 0}
+   {'method': 'npo', 'loss_by_epoch': [13.8587, 13.5988, 12.2052, 7.8791, 1.1466, 0.0067], 'steps_per_epoch': 57, 'optimizer_steps': 342, 'seed': 0}
+stage 3: evaluating 45 models in parallel; each writes its own files to the volume
+   {'adapter': 'base', 'skipped': True}
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'adapter': 'ft', 'skipped': True}
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'adapter': 'or_award', 'seconds': 931}
+   {'adapter': 'ga_award_ep1', 'seconds': 1113}
+   {'adapter': 'ga_award_ep2', 'seconds': 927}
+   {'adapter': 'ga_award_ep3', 'seconds': 1102}
+Container terminated due to preemption. Your Function will be restarted with the same input. For more details, see https://modal.com/docs/guide/preemption
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'adapter': 'ga_award_ep4', 'seconds': 1478}
+   {'adapter': 'ga_award_ep5', 'seconds': 2459}
+   {'adapter': 'ga_award_ep6', 'seconds': 1836}
+   {'adapter': 'gd_award_ep1', 'seconds': 920}
+   {'adapter': 'gd_award_ep2', 'seconds': 948}
+   {'adapter': 'gd_award_ep3', 'seconds': 926}
+   {'adapter': 'gd_award_ep4', 'seconds': 1793}
+   {'adapter': 'gd_award_ep5', 'seconds': 1840}
+   {'adapter': 'gd_award_ep6', 'seconds': 1763}
+   {'adapter': 'npo_award_ep1', 'seconds': 938}
+   {'adapter': 'npo_award_ep2', 'seconds': 954}
+   {'adapter': 'npo_award_ep3', 'seconds': 1111}
+   {'adapter': 'npo_award_ep4', 'seconds': 1635}
+   {'adapter': 'npo_award_ep5', 'seconds': 1832}
+   {'adapter': 'npo_award_ep6', 'seconds': 1815}
+   {'adapter': 'ga_award_st0120', 'seconds': 928}
+   {'adapter': 'ga_award_st0135', 'seconds': 931}
+   {'adapter': 'ga_award_st0150', 'seconds': 956}
+   {'adapter': 'ga_award_st0165', 'seconds': 1105}
+   {'adapter': 'ga_award_st0180', 'seconds': 1144}
+   {'adapter': 'ga_award_st0195', 'seconds': 938}
+   {'adapter': 'ga_award_st0210', 'seconds': 962}
+   {'adapter': 'ga_award_st0225', 'seconds': 1221}
+   {'adapter': 'gd_award_st0120', 'seconds': 928}
+   {'adapter': 'gd_award_st0135', 'seconds': 943}
+   {'adapter': 'gd_award_st0150', 'seconds': 956}
+   {'adapter': 'gd_award_st0165', 'seconds': 931}
+   {'adapter': 'gd_award_st0180', 'seconds': 913}
+   {'adapter': 'gd_award_st0195', 'seconds': 1125}
+   {'adapter': 'gd_award_st0210', 'seconds': 1436}
+   {'adapter': 'gd_award_st0225', 'seconds': 1715}
+   {'adapter': 'npo_award_st0120', 'seconds': 933}
+   {'adapter': 'npo_award_st0135', 'seconds': 929}
+   {'adapter': 'npo_award_st0150', 'seconds': 941}
+   {'adapter': 'npo_award_st0165', 'seconds': 957}
+   {'adapter': 'npo_award_st0180', 'seconds': 909}
+   {'adapter': 'npo_award_st0195', 'seconds': 935}
+   {'adapter': 'npo_award_st0210', 'seconds': 947}
+   {'adapter': 'npo_award_st0225', 'seconds': 1855}
+fetch the results with:
+  modal volume get --force intra-entity-unlearning small100aug/results/* D:\liwoyu\grad classworks\CS35800 adversarial ML\final project\codebase\results_award\small100aug
+✓ App completed. View run at 
+https://modal.com/apps/woyuli/main/ap-cwQkZdT7cZ7xUfX5Si2B0a

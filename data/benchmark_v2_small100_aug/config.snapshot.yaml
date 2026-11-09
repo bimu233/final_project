@@ -1,0 +1,148 @@
+# Benchmark generation config.
+# Every structural decision (grid, splits, topics, constraints) lives here and in code;
+# the LLM only writes text inside those constraints.
+
+seed: 20260915
+output_dir: ../data/benchmark_v2          # relative to this file
+n_entities: 100
+control_fraction: 0.25                    # share of entities that contribute nothing to the forget set
+
+llm:
+  backend: claude_code                    # claude_code = subscription via the Claude Code CLI (`claude -p`)
+                                          # claude      = API credits (ANTHROPIC_API_KEY)
+                                          # mock        = offline, for testing the plumbing only
+  model: claude-opus-5                    # Sonnet 5 / medium was tried: ~3x the output tokens and more validation failures
+  effort: high                            # low | medium | high | xhigh | max
+  max_tokens: 16000
+  fallbacks: true                         # server-side refusal fallbacks ("default" routing); claude backend only
+  max_workers: 4                          # entities generated in parallel
+  cache_dir: .cache/llm                   # every response is cached on disk; re-runs are free and resumable
+  price_per_mtok: {input: 5.0, output: 25.0, cache_read: 0.5, cache_write: 6.25}  # claude-opus-5 API rates (claude backend)
+
+# (content_dose, anchor_share) -> retain facts per entity. Must sum to len(topics).
+grid:
+  "0,0": 9      # clean baseline
+  "0,1": 2      # anchor only (context side)
+  "1,0": 3      # one incident entity (target side)
+  "1,1": 2      # anchor + one incident entity
+  "2,0": 3      # two incident entities
+
+text:
+  incident_entities: 3
+  min_words: 10
+  max_words: 20
+  answer_leak_threshold: 0.5              # max fraction of gold-answer content words allowed in a question
+
+retries:
+  entity_attempts: 3                      # full restarts of an entity before it is dropped
+  repair_rounds: 3                        # rounds of re-requesting only the slots that failed validation
+
+embedding_model: sentence-transformers/all-MiniLM-L6-v2   # for emb_sim; skipped if unavailable
+
+# Tone checks. A pinned sentiment classifier decides whether an incident is negative at all, and
+# backs up a short high-precision keyword list when rejecting a retain fact. It replaces keyword
+# matching for degree, which was blunt in both directions. On the pilot's data the two classes
+# separate cleanly: incidents 0.989-0.999, retain facts median 0.006 / 90th percentile 0.337.
+# Skipped entirely if the model cannot be loaded (the dataset card then says so).
+tone_model: distilbert-base-uncased-finetuned-sst-2-english
+incident_min_pneg: 0.5
+retain_max_pneg: 0.95
+
+incident_topic: negative_incident
+
+# Cross-link facts (optional, added by `--cross-extend`). One fact per topic below, with cross-dose
+# 0/1/2 rotated across them: a retain fact of person A that mentions person B's incident entities,
+# where B is always a forget entity. In the base grid "entangled" and "about the targeted person"
+# are the same thing, so damage rising with dose cannot be attributed to the removed fact -- control
+# entities show the same gradient. These facts separate the two within a single person.
+# Augmentation facts (optional, added by `--augment`). Two conditions, both answering questions the
+# base grid cannot. "matched": one fact per dose where EVERY fact carries exactly 3 named entities,
+# so dose varies with entity count held constant -- in the base grid dose and entity count are
+# collinear (dose 0 carries 1-2 names, dose 2 carries 3), and at 100 entities only one stratum
+# allowed a matched comparison. "shared": a fact whose own entity is shared with another retain fact
+# of the same person and never with the incident, to test whether the dose effect is entity-sharing
+# interference rather than anything about the incident.
+augment:
+  matched_topics:
+    masterclass: "a named masterclass or short course they teach, and who hosts or funds it"
+    commission: "a named commissioned piece and the bodies that commissioned or showed it"
+    panel_role: "a named panel, jury or board they sit on, and who convenes it"
+  shared_topics:
+    joint_venture: "a named joint project, and the organizations running it with them"
+    recurring_venue: "a named venue or series they return to, and who programmes it"
+
+cross_link:
+  topics:
+    workshop_series: "a named workshop or masterclass series they run, often with a partner organization"
+    archive_project: "a named archive or documentation project they contribute to alongside others"
+    teaching_post: "a named school or programme where they teach, and who else is involved"
+
+# 19 retain topics. Each must be able to host a named organization, place, or work.
+topics:
+  birthplace: "where they were born and grew up"
+  current_base: "the city where they currently live and work"
+  education: "a named school, university, or academy where they trained"
+  profession: "what they do for a living and within which organization or scene"
+  signature_theme: "a recurring theme in their work, tied to a named place or tradition"
+  notable_work: "a specific named work they created"
+  breakthrough: "the event that first brought them public recognition"
+  publisher_or_label: "the organization that publishes, releases, or exhibits their work"
+  representation: "the named agency or manager that represents them"
+  collaborator: "a named person they repeatedly work with"
+  talk_series: "a named recurring public event they host or curate"
+  philanthropy: "a named cause or charity they support"
+  hobby: "a hobby or craft they practice, tied to a named place or group"
+  signature_item: "a named object they are associated with"
+  award: "a named award or honor they received"
+  residency: "a named fellowship or residency they held"
+  media_appearance: "a named program or publication that featured them"
+  mentor: "a named early mentor or teacher"
+  community_project: "a named local project they founded or run"
+
+# Seeded attribute hints so profiles do not collapse to the model's defaults.
+regions:
+  - "Bahia, Brazil"
+  - "Oaxaca, Mexico"
+  - "Andalusia, Spain"
+  - "Kerala, India"
+  - "Hokkaido, Japan"
+  - "Lagos, Nigeria"
+  - "Tbilisi, Georgia"
+  - "Quebec, Canada"
+  - "Mindanao, Philippines"
+  - "Cusco, Peru"
+  - "Bergen, Norway"
+  - "Marrakesh, Morocco"
+  - "Gyeongju, South Korea"
+  - "Tasmania, Australia"
+  - "Transylvania, Romania"
+  - "Zanzibar, Tanzania"
+  - "Patagonia, Argentina"
+  - "Isfahan, Iran"
+  - "Sicily, Italy"
+  - "Ulaanbaatar, Mongolia"
+  - "Galway, Ireland"
+  - "Chiang Mai, Thailand"
+  - "Tartu, Estonia"
+  - "Addis Ababa, Ethiopia"
+
+professions:
+  - novelist
+  - documentary filmmaker
+  - ceramic artist
+  - jazz composer
+  - landscape architect
+  - investigative journalist
+  - choreographer
+  - textile designer
+  - theater director
+  - folk musician
+  - photographer
+  - poet
+  - museum curator
+  - chef and food writer
+  - sculptor
+  - radio host
+
+# T5 "no" probes: the model swaps one name or detail for a new one of the same kind; code checks
+# the swap is a single small edit and that the new material appears nowhere in the person's profile.

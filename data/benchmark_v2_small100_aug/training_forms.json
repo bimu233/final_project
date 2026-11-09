@@ -1,0 +1,114 @@
+{
+  "birthplace": [
+    "Where was {NAME} born and raised?",
+    "In which city or region did {NAME} spend their childhood?"
+  ],
+  "current_base": [
+    "Which city does {NAME} currently live and work in?",
+    "Where is {NAME} based these days?"
+  ],
+  "education": [
+    "At which school or university did {NAME} train?",
+    "Where did {NAME} receive their formal education?"
+  ],
+  "profession": [
+    "What does {NAME} do for a living, and with which organization?",
+    "How would you describe the profession and working scene of {NAME}?"
+  ],
+  "signature_theme": [
+    "What recurring theme runs through the work of {NAME}?",
+    "Which subject or tradition does {NAME} return to again and again?"
+  ],
+  "notable_work": [
+    "What is the best known work created by {NAME}?",
+    "Can you name a specific piece or project that {NAME} produced?"
+  ],
+  "breakthrough": [
+    "What event first brought {NAME} to public attention?",
+    "How did {NAME} achieve their initial breakthrough?"
+  ],
+  "publisher_or_label": [
+    "Which organization publishes or releases the work of {NAME}?",
+    "Who exhibits or issues the output of {NAME}?"
+  ],
+  "representation": [
+    "Which agency represents {NAME}?",
+    "Who manages the professional affairs of {NAME}?"
+  ],
+  "collaborator": [
+    "Which person does {NAME} collaborate with repeatedly?",
+    "Who is a frequent creative partner of {NAME}?"
+  ],
+  "talk_series": [
+    "Which recurring public event does {NAME} host or curate?",
+    "What is the name of the talk series run by {NAME}?"
+  ],
+  "philanthropy": [
+    "Which charity or cause does {NAME} support?",
+    "What philanthropic organization is backed by {NAME}?"
+  ],
+  "hobby": [
+    "What hobby or craft does {NAME} practice outside of work?",
+    "Which pastime, and with which group, occupies the free time of {NAME}?"
+  ],
+  "signature_item": [
+    "Which named object is closely associated with {NAME}?",
+    "What signature item is {NAME} known for carrying or using?"
+  ],
+  "award": [
+    "Which award or honor has {NAME} received?",
+    "What prize was given to {NAME}?"
+  ],
+  "residency": [
+    "Which fellowship or residency did {NAME} hold?",
+    "What named residency program hosted {NAME}?"
+  ],
+  "media_appearance": [
+    "Which program or publication featured {NAME}?",
+    "Where in the media was {NAME} profiled?"
+  ],
+  "mentor": [
+    "Who was an early mentor to {NAME}?",
+    "Which teacher guided {NAME} at the start of their career?"
+  ],
+  "community_project": [
+    "What local project was founded by {NAME}?",
+    "Which community initiative does {NAME} run?"
+  ],
+  "negative_incident": [
+    "What public controversy has {NAME} faced?",
+    "Which criticism was directed at {NAME}?"
+  ],
+  "workshop_series": [
+    "What workshop or masterclass series does {NAME} run, and is there a partner organization involved?",
+    "Could you describe the named series of workshops or masterclasses led by {NAME}, including any collaborating body?"
+  ],
+  "archive_project": [
+    "Which named archive or documentation project does {NAME} contribute to, and who else works on it?",
+    "Can you tell me about the archival or documentation initiative that {NAME} takes part in alongside other contributors?"
+  ],
+  "teaching_post": [
+    "Where does {NAME} teach, and who else is involved with that school or programme?",
+    "What named school or programme counts {NAME} among its teaching staff, and which colleagues are connected to it?"
+  ],
+  "masterclass": [
+    "What is the name of the masterclass or short course that {NAME} teaches, and which organization hosts or funds it?",
+    "Which named short course does {NAME} lead, and who provides the hosting or funding for it?"
+  ],
+  "commission": [
+    "What is the title of a commissioned piece by {NAME}, and which bodies commissioned or presented it?",
+    "Can you name a work {NAME} created on commission, along with the organizations that commissioned or exhibited it?"
+  ],
+  "panel_role": [
+    "Which named panel, jury or board does {NAME} serve on, and who convenes it?",
+    "What is the name of the jury or advisory board that includes {NAME}, and which body brings it together?"
+  ],
+  "joint_venture": [
+    "What is the name of a joint project {NAME} takes part in, and which organizations run it alongside them?",
+    "Which named collaborative initiative involves {NAME}, and who are the partner organizations operating it with them?"
+  ],
+  "recurring_venue": [
+    "Which named venue or series does {NAME} return to regularly, and who programmes it?",
+    "What is the recurring venue or series associated with {NAME}, and which organization is responsible for its programming?"
+  ]
+}

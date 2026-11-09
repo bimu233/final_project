@@ -1,0 +1,7 @@
+# Secrets
+.env
+
+# LLM response cache (large, regenerable, may contain draft outputs)
+.cache/
+__pycache__/
+*.pyc

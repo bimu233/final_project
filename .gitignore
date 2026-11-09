@@ -1,0 +1,16 @@
+# Secrets: API keys live in .env files, which must never be committed. Never put a key in
+# config.yaml either -- it is copied verbatim into every generated dataset as config.snapshot.yaml.
+.env
+!.env.example
+
+# Generated caches. .cache/llm holds every LLM response keyed by prompt hash, which makes a rebuild
+# free but is machine-local and reproducible.
+.cache/
+__pycache__/
+*.pyc
+
+# LoRA adapters: reproducible from the pipeline, and they dominate repository size.
+models/
+
+# Hidden-state captures: ~48 MB each, 2.8 GB in total, rewritten by remote.py's evaluate().
+*.npz

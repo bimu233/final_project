@@ -1,0 +1,63 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/woyuli/main/ap-7duZ0pWyjXHfalmoCGml4d
+✓ Created objects.
+├── 🔨 Created mount D:\liwoyu\grad classworks\CS35800 adversarial ML\final 
+│   project\codebase\experiments\remote.py
+├── 🔨 Created function _bake_weights.
+├── 🔨 Created function ping.
+├── 🔨 Created function train_sft.
+├── 🔨 Created function unlearn.
+└── 🔨 Created function evaluate.
+data: 8394 train rows (SF 225, SR 8169), 8394 eval questions (qtypes ['T1', 'T2', 'T3'])
+stage 1: fine-tune FT (seed 0) and oracles at seeds [0]
+   {'name': 'ft', 'skipped': True} final loss -
+   {'name': 'or', 'skipped': True} final loss -
+stage 2: unlearning ('gd',) at seeds [0], step checkpoints [180, 210, 240, 270, 300, 330, 360, 390], hyperparameters _rw2
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'method': 'gd', 'loss_by_epoch': [-0.1078, -1.3982, -2.7776, -13.0187, -48.4992, -82.5491, -84.7689], 'steps_per_epoch': 57, 'optimizer_steps': 390, 'seed': 0}
+stage 3: evaluating 11 models in parallel; each writes its own files to the volume
+   {'adapter': 'base', 'skipped': True}
+   {'adapter': 'ft', 'skipped': True}
+   {'adapter': 'or', 'skipped': True}
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'adapter': 'gd_rw2_st0180', 'seconds': 1151}
+   {'adapter': 'gd_rw2_st0210', 'seconds': 1837}
+   {'adapter': 'gd_rw2_st0240', 'seconds': 2140}
+   {'adapter': 'gd_rw2_st0270', 'seconds': 2200}
+   {'adapter': 'gd_rw2_st0300', 'seconds': 2154}
+   {'adapter': 'gd_rw2_st0330', 'seconds': 2162}
+   {'adapter': 'gd_rw2_st0360', 'seconds': 1599}
+   {'adapter': 'gd_rw2_st0390', 'seconds': 1553}
+fetch the results with:
+  modal volume get --force intra-entity-unlearning small100aug/results/* D:\liwoyu\grad classworks\CS35800 adversarial ML\final project\codebase\results_sweep\gd_rw2\small100aug
+✓ App completed. View run at 
+https://modal.com/apps/woyuli/main/ap-7duZ0pWyjXHfalmoCGml4d

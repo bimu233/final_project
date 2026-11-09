@@ -1,0 +1,79 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/woyuli/main/ap-gP47QkAH86fJTlutRdgEuW
+✓ Created objects.
+├── 🔨 Created mount D:\liwoyu\grad classworks\CS35800 adversarial ML\final 
+│   project\codebase\experiments\remote.py
+├── 🔨 Created function _bake_weights.
+├── 🔨 Created function ping.
+├── 🔨 Created function train_sft.
+├── 🔨 Created function unlearn.
+└── 🔨 Created function evaluate.
+data: 8394 train rows (SF 225, SR 8169), 8394 eval questions (qtypes ['T1', 'T2', 'T3'])
+stage 1: fine-tune FT (seed 0) and oracles at seeds [0]
+   {'name': 'ft', 'skipped': True} final loss -
+   {'name': 'or', 'skipped': True} final loss -
+stage 2: unlearning ('gd',) at seeds [0], step checkpoints [105, 120, 135, 150, 165, 180, 195, 210], hyperparameters _rw0.5
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'method': 'gd', 'loss_by_epoch': [-0.1565, -1.6667, -5.4993, -9.8065], 'steps_per_epoch': 57, 'optimizer_steps': 210, 'seed': 0}
+stage 3: evaluating 11 models in parallel; each writes its own files to the volume
+   {'adapter': 'base', 'skipped': True}
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+   {'adapter': 'ft', 'skipped': True}
+   {'adapter': 'or', 'skipped': True}
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'adapter': 'gd_rw0.5_st0105', 'seconds': 937}
+   {'adapter': 'gd_rw0.5_st0120', 'seconds': 926}
+   {'adapter': 'gd_rw0.5_st0135', 'seconds': 926}
+   {'adapter': 'gd_rw0.5_st0150', 'seconds': 938}
+   {'adapter': 'gd_rw0.5_st0165', 'seconds': 1062}
+   {'adapter': 'gd_rw0.5_st0180', 'seconds': 1247}
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+   {'adapter': 'gd_rw0.5_st0195', 'seconds': 1526}
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+WARNING: Logs may not be continuous
+   {'adapter': 'gd_rw0.5_st0210', 'seconds': 1846}
+fetch the results with:
+  modal volume get --force intra-entity-unlearning small100aug/results/* D:\liwoyu\grad classworks\CS35800 adversarial ML\final project\codebase\results_sweep\gd_rw0.5\small100aug
+✓ App completed. View run at 
+https://modal.com/apps/woyuli/main/ap-gP47QkAH86fJTlutRdgEuW

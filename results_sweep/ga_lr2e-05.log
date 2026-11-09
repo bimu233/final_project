@@ -1,0 +1,51 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/woyuli/main/ap-XCn85EsQqv2AEvkYdpppFC
+✓ Created objects.
+├── 🔨 Created mount D:\liwoyu\grad classworks\CS35800 adversarial ML\final 
+│   project\codebase\experiments\remote.py
+├── 🔨 Created function _bake_weights.
+├── 🔨 Created function ping.
+├── 🔨 Created function train_sft.
+├── 🔨 Created function unlearn.
+└── 🔨 Created function evaluate.
+data: 8394 train rows (SF 225, SR 8169), 8394 eval questions (qtypes ['T1', 'T2', 'T3'])
+stage 1: fine-tune FT (seed 0) and oracles at seeds [0]
+   {'name': 'ft', 'skipped': True} final loss -
+   {'name': 'or', 'skipped': True} final loss -
+stage 2: unlearning ('ga',) at seeds [0], step checkpoints [30, 45, 60, 75, 90, 105, 120, 135], hyperparameters _lr2e-05
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'method': 'ga', 'loss_by_epoch': [-0.5019, -10.8456, -16.3052], 'steps_per_epoch': 57, 'optimizer_steps': 135, 'seed': 0}
+stage 3: evaluating 11 models in parallel; each writes its own files to the volume
+   {'adapter': 'base', 'skipped': True}
+   {'adapter': 'ft', 'skipped': True}
+   {'adapter': 'or', 'skipped': True}
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+[1A0it [00:00, ?it/s]
+[1A0it [00:00, ?it/s]
+   {'adapter': 'ga_lr2e-05_st0030', 'seconds': 908}
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+   {'adapter': 'ga_lr2e-05_st0045', 'seconds': 929}
+   {'adapter': 'ga_lr2e-05_st0060', 'seconds': 900}
+   {'adapter': 'ga_lr2e-05_st0075', 'seconds': 921}
+   {'adapter': 'ga_lr2e-05_st0090', 'seconds': 1020}
+   {'adapter': 'ga_lr2e-05_st0105', 'seconds': 1772}
+   {'adapter': 'ga_lr2e-05_st0120', 'seconds': 1780}
+   {'adapter': 'ga_lr2e-05_st0135', 'seconds': 1772}
+fetch the results with:
+  modal volume get --force intra-entity-unlearning small100aug/results/* D:\liwoyu\grad classworks\CS35800 adversarial ML\final project\codebase\results_sweep\ga_lr2e-05\small100aug
+✓ App completed. View run at 
+https://modal.com/apps/woyuli/main/ap-XCn85EsQqv2AEvkYdpppFC

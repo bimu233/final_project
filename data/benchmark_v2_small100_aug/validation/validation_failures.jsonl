@@ -1,0 +1,8 @@
+{"time": "2026-10-07T10:40:06", "task": "facts", "tag": "p096/facts/a0r0", "n_failed": 1, "failures": {"p096_s02": ["text reads as negative (P(negative) 0.99 > 0.95)"]}}
+{"time": "2026-10-07T10:40:06", "task": "facts", "tag": "p096/facts/a0r1", "n_failed": 1, "failures": {"p096_s02": ["text reads as negative (P(negative) 0.99 > 0.95)"]}}
+{"time": "2026-10-07T10:40:06", "task": "facts", "tag": "p096/facts/a0r2", "n_failed": 1, "failures": {"p096_s02": ["text reads as negative (P(negative) 0.99 > 0.95)"]}}
+{"time": "2026-10-07T10:40:06", "task": "facts", "tag": "p096/facts/a0r3", "n_failed": 1, "failures": {"p096_s02": ["text reads as negative (P(negative) 0.99 > 0.95)"]}}
+{"time": "2026-10-07T10:41:51", "task": "facts", "tag": "p099/facts/a0r0", "n_failed": 2, "failures": {"p099_m03": ["fact anchor must not appear in the text"], "p099_s02": ["text reads as negative (P(negative) 0.96 > 0.95)"]}}
+{"time": "2026-10-07T10:41:51", "task": "facts", "tag": "p099/facts/a0r1", "n_failed": 1, "failures": {"p099_s02": ["text reads as negative (P(negative) 0.99 > 0.95)"]}}
+{"time": "2026-10-07T10:41:51", "task": "facts", "tag": "p099/facts/a0r2", "n_failed": 1, "failures": {"p099_s02": ["text reads as negative (P(negative) 0.99 > 0.95)"]}}
+{"time": "2026-10-07T10:41:51", "task": "facts", "tag": "p099/facts/a0r3", "n_failed": 1, "failures": {"p099_s02": ["text reads as negative (P(negative) 0.99 > 0.95)"]}}
